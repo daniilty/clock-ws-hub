@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "./;pb";
+
+service GismeteoWeatherGateway {
+  rpc GetWeather(Empty) returns (Weather) {}
+}
+
+message Weather {
+  string info = 1;
+}
+
+message Empty {}
+
