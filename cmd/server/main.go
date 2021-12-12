@@ -49,7 +49,7 @@ func run() error {
 
 	sugaredLogger := logger.Sugar()
 
-	wsServer := server.NewWS(service, sugaredLogger, 10*time.Second, cfg.httpAddr, cfg.tinkoffAccountID)
+	wsServer := server.NewWS(service, sugaredLogger, 1*time.Minute, cfg.httpAddr, cfg.tinkoffAccountID)
 
 	wg := &sync.WaitGroup{}
 
