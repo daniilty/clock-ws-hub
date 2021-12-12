@@ -38,7 +38,7 @@ func run() error {
 
 	service := core.NewServiceImpl(weatherClient, tinkoffClient)
 
-	loggerCfg := zap.NewDevelopmentConfig()
+	loggerCfg := zap.NewProductionConfig()
 
 	logger, err := loggerCfg.Build()
 	if err != nil {
@@ -49,7 +49,7 @@ func run() error {
 
 	sugaredLogger := logger.Sugar()
 
-	wsServer := server.NewWS(service, sugaredLogger, 15*time.Second, cfg.httpAddr, cfg.tinkoffAccountID)
+	wsServer := server.NewWS(service, sugaredLogger, 10*time.Second, cfg.httpAddr, cfg.tinkoffAccountID)
 
 	wg := &sync.WaitGroup{}
 
