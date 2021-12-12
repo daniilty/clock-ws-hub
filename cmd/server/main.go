@@ -10,12 +10,12 @@ import (
 	"time"
 
 	"github.com/daniilty/clock-ws-hub/internal/core"
-	"github.com/daniilty/clock-ws-hub/internal/pb"
 	"github.com/daniilty/clock-ws-hub/internal/server"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 
 	invest "github.com/TinkoffCreditSystems/invest-openapi-go-sdk"
+	schema "github.com/daniilty/weather-gateway-schema"
 )
 
 func run() error {
@@ -33,7 +33,7 @@ func run() error {
 		return err
 	}
 
-	weatherClient := pb.NewGismeteoWeatherGatewayClient(conn)
+	weatherClient := schema.NewGismeteoWeatherGatewayClient(conn)
 	tinkoffClient := invest.NewRestClient(cfg.tinkoffAPIKey)
 
 	service := core.NewServiceImpl(weatherClient, tinkoffClient)

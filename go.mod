@@ -13,6 +13,7 @@ require (
 )
 
 require (
+	github.com/daniilty/weather-gateway-schema v0.0.0-20211212103117-3e63906b9102 // indirect
 	github.com/golang/protobuf v1.5.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	go.uber.org/atomic v1.7.0 // indirect

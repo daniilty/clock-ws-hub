@@ -4,7 +4,7 @@ import (
 	"context"
 
 	invest "github.com/TinkoffCreditSystems/invest-openapi-go-sdk"
-	"github.com/daniilty/clock-ws-hub/internal/pb"
+	schema "github.com/daniilty/weather-gateway-schema"
 )
 
 var _ Service = (*ServiceImpl)(nil)
@@ -15,11 +15,11 @@ type Service interface {
 }
 
 type ServiceImpl struct {
-	weatherClient pb.GismeteoWeatherGatewayClient
+	weatherClient schema.GismeteoWeatherGatewayClient
 	tinkoffClient *invest.RestClient
 }
 
-func NewServiceImpl(weatherClient pb.GismeteoWeatherGatewayClient, tinkoffClient *invest.RestClient) *ServiceImpl {
+func NewServiceImpl(weatherClient schema.GismeteoWeatherGatewayClient, tinkoffClient *invest.RestClient) *ServiceImpl {
 	return &ServiceImpl{
 		weatherClient: weatherClient,
 		tinkoffClient: tinkoffClient,

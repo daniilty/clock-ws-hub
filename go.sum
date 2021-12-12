@@ -17,6 +17,8 @@ github.com/cncf/xds/go v0.0.0-20210922020428-25de7278fc84/go.mod h1:eXthEFrGJvWH
 github.com/cncf/xds/go v0.0.0-20211011173535-cb28da3451f1/go.mod h1:eXthEFrGJvWHgFFCl3hGmgk+/aYT6PnTQLykKQRLhEs=
 github.com/daniilty/tinkoff-invest-diff v0.0.0-20211211172212-42342ec1e29f h1:djeaiQqdtWhVo7aFyZcHJR1gCz5PSGNp1z1Ysaf8pZE=
 github.com/daniilty/tinkoff-invest-diff v0.0.0-20211211172212-42342ec1e29f/go.mod h1:Qrompabn2HU+B1GRAXuRhUWgyMYCdJUaRMjslig2aio=
+github.com/daniilty/weather-gateway-schema v0.0.0-20211212103117-3e63906b9102 h1:XbDCZvKa+WCNvrlV/6ueX5KAvlNjNijxYg2aWlNofps=
+github.com/daniilty/weather-gateway-schema v0.0.0-20211212103117-3e63906b9102/go.mod h1:845vVFrSsqK7Dvt6qxobE4BB+5ai4nB68RyzqfhJaT4=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
